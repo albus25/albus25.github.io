@@ -8,7 +8,7 @@
       <h2>Saurabh Sali</h2>
       <span class="designation">Framer Designer & Developer</span>
     </div>
-    <img class="me" src="assets/images/me.jpg" alt="Me">
+    <img class="me" src="/src/assets/images/me.png" alt="Me">
     <h2 class="email">saurabhjerry2@gmail.com</h2>
     <h2 class="address">India</h2>
     <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
