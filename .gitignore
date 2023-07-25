@@ -1,6 +1,7 @@
 /node_modules
 /package-lock.json
 /deploy.sh
+/dist
 
 # Log files
 npm-debug.log*
