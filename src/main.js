@@ -6,4 +6,4 @@ const app = createApp(App)
 
 app.use(router)
 
-app.mount('#smooth-content')
+app.mount('#app')

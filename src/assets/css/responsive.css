@@ -57,10 +57,9 @@
         position: relative;
         max-width: 767px;
         left: 0;
-        margin: auto;
         top: 0;
         transform: translateY(0);
-        margin-top: 20px;
+        margin: 20px auto auto;
         display: none;
     }
 
@@ -74,6 +73,7 @@
 
     .icon-menu {
         position: fixed;
+        display: flex;
     }
 
     .menu {
@@ -148,7 +148,7 @@
 @media (max-width: 767px) {
     .icon-menu {
         right: 30px;
-        top: 30px;
+        bottom: 30px;
     }
 
     .hero-section .hero-content .go-to-project-btn {
@@ -334,7 +334,8 @@
     .services-area,
     .resume-area,
     .about-area,
-    .hero-section {
+    .hero-section,
+    .contact-area {
         padding-bottom: 0;
     }
 

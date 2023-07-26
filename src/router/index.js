@@ -1,18 +1,18 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import AboutSection from "@/components/AboutSection.vue";
 import ResumeSection from "@/components/ResumeSection.vue";
 import ServicesSection from "@/components/ServicesSection.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
+import IntroductionSection from "@/components/IntroductionSection.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: HomeView
+            name: 'introduction',
+            component: IntroductionSection
         },
         {
             path: '/about',

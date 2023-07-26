@@ -8,26 +8,22 @@
       <h2>Saurabh Sali</h2>
       <span class="designation">Framer Designer & Developer</span>
     </div>
-    <img class="me" src="/src/assets/images/me.png" alt="Me">
+    <img alt="Me" class="me" src="/src/assets/images/me.png">
     <h2 class="email">saurabhjerry2@gmail.com</h2>
     <h2 class="address">India</h2>
     <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
       <li>
-        <a href="#"><i class="lab la-twitter"></i></a>
+        <RouterLink href="https://in.linkedin.com/in/saurabh-sali-401b5b161/" target="_blank" to=""><i
+            class="lab la-linkedin"></i></RouterLink>
       </li>
       <li>
-        <a href="#"><i class="lab la-dribbble"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="lab la-instagram"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="lab la-github"></i></a>
+        <RouterLink href="https://github.com/albus25" target="_blank" to=""><i class="lab la-github"></i>
+        </RouterLink>
       </li>
     </ul>
-    <a href="#" class="theme-btn">
+    <RouterLink class="theme-btn" href="#" tag="a" to="/contact">
       <i class="las la-envelope"></i> Contact Me!
-    </a>
+    </RouterLink>
   </div>
 </template>
 

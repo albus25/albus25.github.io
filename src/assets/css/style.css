@@ -81,7 +81,6 @@ ul {
 .theme-btn {
     background: var(--primary_color);
     color: #000000;
-    display: block;
     text-align: center;
     padding: 11px 58px 10px 58px;
     display: inline-flex;
@@ -89,7 +88,6 @@ ul {
     border-radius: 30px;
     justify-content: center;
     text-transform: uppercase;
-    border: none;
     transition: .3s;
     cursor: pointer;
     border: 2px solid var(--primary_color);
@@ -118,11 +116,10 @@ ul {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 300;
-    margin: 0;
     border: 1px solid #565656;
     padding: 9px 20px;
     border-radius: 30px;
-    margin-bottom: 53px;
+    margin: 0 0 53px;
     display: inline-flex;
     align-items: center;
 }
@@ -163,7 +160,7 @@ ul {
     border-radius: 50%;
     background-color: #fff;
     transform-origin: 50%;
-    animation: bounceLoader 500ms alternate infinite ease;
+    animation: bounceLoader 500ms alternate infinite ease-out;
 }
 
 
@@ -171,11 +168,11 @@ ul {
 .icon-menu {
     position: absolute;
     right: 68px;
-    top: 60px;
+    bottom: 60px;
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    display: flex;
+    display: none;
     flex-direction: column;
     border: 1px solid #575757;
     align-items: center;
@@ -521,10 +518,9 @@ main.body-main {
     background: #191919;
     height: 100%;
     overflow-x: hidden;
-    padding-top: 50px;
+    padding: 50px 134px 134px;
     margin-right: -400px;
     transition: .4s;
-    padding: 134px;
 }
 
 .global-color .inner .global-color-option h2 {
@@ -725,7 +721,6 @@ main.body-main {
     right: 30px;
     top: 30px;
     font-size: 25px;
-    cursor: pointer;
     color: #fff;
 }
 
@@ -955,8 +950,7 @@ body .body-overlay {
 
 /* 10 - About */
 .about-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 68px 0;
 }
 
 .about-area .about-content p {
@@ -967,8 +961,7 @@ body .body-overlay {
 
 /* 11 - Resume */
 .resume-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 68px 0;
 }
 
 .resume-area .resume-content .resume-timeline .item {
@@ -1047,8 +1040,7 @@ body .body-overlay {
 
 /* 12 - Services */
 .services-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 68px 0;
 }
 
 .services-items .service-item {
@@ -1112,8 +1104,7 @@ body .body-overlay {
 
 /* 13 - Skills */
 .skills-area {
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding: 68px 0;
 }
 
 .skills .skill {
@@ -1153,8 +1144,7 @@ body .body-overlay {
 
 /* 14 - Portfolio */
 .portfolio-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 68px 0;
 }
 
 .portfolio-items .portfolio-item {
@@ -1345,8 +1335,7 @@ body .body-overlay {
 
 /* 17 - Pricing Table */
 .pricing-area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 68px 0;
 }
 
 .pricing-table-items .pricing-table {
@@ -1432,7 +1421,7 @@ body .body-overlay {
 
 /* 18 - Contact */
 .contact-area {
-    padding-bottom: 50px;
+    padding: 68px 0;
 }
 
 .contact-area .contact-content h3 {
@@ -1485,9 +1474,8 @@ body .body-overlay {
     border: none;
     background: none;
     font-size: 18px;
-    padding: 0;
     transition: .2s;
-    padding-bottom: 3px;
+    padding: 0 0 3px;
 }
 
 .contact-area .contact-content .contact-form .input-group textarea {
@@ -1549,7 +1537,7 @@ body .body-overlay {
 /* 19 - Breadcrumb */
 .breadcrumb-area {
     position: relative;
-    padding: 50px 0px 50px;
+    padding: 50px 0 50px;
     background: #1f1f1f;
     overflow: hidden;
     z-index: 1;
@@ -1566,7 +1554,7 @@ body .body-overlay {
     border-radius: 50%;
     background: rgb(255 255 255 / 10%);
     z-index: -1;
-    box-shadow: 0px 0px 0 20px rgb(255 255 255 / 5%);
+    box-shadow: 0 0 0 20px rgb(255 255 255 / 5%);
 }
 
 .breadcrumb-area::after {
@@ -1671,15 +1659,9 @@ body .body-overlay {
     display: flex;
     align-items: center;
     gap: 5px;
-    transition: .3s;
-    /* opacity: 0.5; */
     color: #fff;
-
-
-    background: linear-gradient(to top right, var(--primary_color) -200%, transparent 300%);
-    background-repeat: no-repeat;
     background-size: 0 0.0625em;
-    background-position: 0 95%;
+    background: linear-gradient(to top right, var(--primary_color) -200%, transparent 300%) no-repeat 0 95%;
     transition: .25s;
 }
 
@@ -1703,11 +1685,8 @@ body .body-overlay {
 .blog-item .blog-item-content h1 a {
     color: #fff;
     display: inline-block;
-
-    background: linear-gradient(to top right, var(--primary_color) -200%, transparent 300%);
-    background-repeat: no-repeat;
     background-size: 0 0.0625em;
-    background-position: 0 95%;
+    background: linear-gradient(to top right, var(--primary_color) -200%, transparent 300%) no-repeat 0 95%;
     transition: .25s;
 }
 
@@ -1891,13 +1870,12 @@ body .body-overlay {
 }
 
 .blog-item2 .meta {
-    margin: 0;
     background: #2a2a2a;
     padding: 12px 20px;
     border-radius: 4px;
     display: inline-flex;
-    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 5%);
-    margin-bottom: 20px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 5%);
+    margin: 0 0 20px;
 }
 
 .blog-item2 .meta li {
@@ -1942,7 +1920,6 @@ body .body-overlay {
 .blog-details-area .blog-details-content p {
     font-size: 15px;
     color: #999999;
-    color: #fff;
     font-weight: 300;
 }
 
@@ -2111,9 +2088,8 @@ body .body-overlay {
     width: 100%;
     border: none;
     background: none;
-    padding: 0;
     transition: .2s;
-    padding-bottom: 3px;
+    padding: 0 0 3px;
 }
 
 .comment-form form .input-group input:focus,
@@ -2147,8 +2123,6 @@ body .body-overlay {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('../images/bg-shape.png') center no-repeat;
-    background-size: cover;
     opacity: 0.4;
 }
 

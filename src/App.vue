@@ -5,12 +5,7 @@ import HomeView from "@/views/HomeView.vue";
 <template>
   <HomeView/>
 
-  <!--    <nav>-->
-  <!--      <RouterLink to="/">Home</RouterLink>-->
-  <!--      <RouterLink to="/about">About</RouterLink>-->
-  <!--    </nav>-->
-
-  <!--  <RouterView/>-->
+  <RouterView/>
 </template>
 
 <style scoped>
